@@ -1,6 +1,6 @@
 node {
     stage('miseAjour') {
-      sh 'echo "Crescence2001#" | sudo -S apt update'
+      sh 'sudo apt update'
       sh 'sudo apt install apt-transport-https ca-certificates curl software-properties-common'
       sh 'curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -'
       sh 'sudo apt update'
