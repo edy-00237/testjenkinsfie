@@ -9,7 +9,7 @@ node {
       sh 'sudo apt install docker-ce'
       sh 'sudo systemctl status docker'
       sh 'sudo usermod -aG docker ${USER}'
-      sh 'su - ${USER}
+      sh 'su - ${USER}'
     }
     stage('InstallationDockerCompose') {
       sh 'mkdir -p ~/.docker/cli-plugins/'
