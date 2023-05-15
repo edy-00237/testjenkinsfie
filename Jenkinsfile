@@ -7,7 +7,7 @@ node {
       sh 'sudo apt update'
     }
     stage('installationDocker') {
-      sh 'sudo apt install docker-ce'
+      sh 'sudo apt install docker-ce -y'
       sh 'sudo systemctl status docker'
       sh 'sudo usermod -aG docker ${USER}'
       sh 'su - ${USER}'
