@@ -1,7 +1,5 @@
 node {
     stage('installationDocker') {
-      sh 'sudo apt install docker-ce -y'
-      sh 'sudo systemctl status docker'
       sh 'sudo usermod -aG docker ${USER}'
       sh 'su - ${USER}'
     }
