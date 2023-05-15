@@ -1,0 +1,11 @@
+node {
+    stage('clone') {
+      git 'https://github.com/edy-00237/testjenkinsfie.git'
+    }
+    stage('build') {
+      sh 'javac Main.java'
+    }
+    stage('run') {
+      sh 'java Main'
+   }
+}
